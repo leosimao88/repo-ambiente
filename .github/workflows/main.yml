@@ -10,6 +10,7 @@ on:
 jobs:
     deploy-fake:
         runs-on: ubuntu-latest
+        environment: producao
         steps:
             - name: Fake de deploy em ambiente
               run: echo "Deploy no ambiente de ${{ vars.AMBIENTE_DEPLOY }}"
